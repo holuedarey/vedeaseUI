@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="dashboard/assets/media/image/favicon.png" />
+
+    <!-- Plugin styles -->
+    <link rel="stylesheet" href="dashboard/vendors/bundle.css" type="text/css">
+
+    <!-- Slick -->
+    <link rel="stylesheet" href="dashboard/vendors/slick/slick.css" type="text/css">
+    <link rel="stylesheet" href="dashboard/vendors/slick/slick-theme.css" type="text/css">
+
+    <!-- Daterangepicker -->
+    <link rel="stylesheet" href="dashboard/vendors/datepicker/daterangepicker.css" type="text/css">
+
+    <!-- DataTable -->
+    <link rel="stylesheet" href="dashboard/vendors/dataTable/datatables.min.css" type="text/css">
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="dashboard/assets/css/app.min.css" type="text/css">
+</head>
+
+<body class="">
+    <!-- BEGIN: Sidebar Group -->
+    <div class="sidebar-group">
+
+        <!-- BEGIN: Settings -->
+        <div class="sidebar" id="settings">
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Settings</h6>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item pl-0 pr-0">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                                <label class="custom-control-label" for="customSwitch1">Allow notifications.</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item pl-0 pr-0">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Hide user requests</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item pl-0 pr-0">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch3" checked>
+                                <label class="custom-control-label" for="customSwitch3">Speed up demands</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item pl-0 pr-0">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch4" checked>
+                                <label class="custom-control-label" for="customSwitch4">Hide menus</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item pl-0 pr-0">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch5">
+                                <label class="custom-control-label" for="customSwitch5">Remember next visits</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item pl-0 pr-0">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch6">
+                                <label class="custom-control-label" for="customSwitch6">Enable report
+                                    generation.</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END: Settings -->
+
+    </div>
+    <!-- END: Sidebar Group -->
+
+    <!-- begin::main -->
+    <div class="layout-wrapper">
+
+        <!-- begin::header -->
+        <div class="header d-print-none">
+
+            <div class="header-left">
+                <div class="navigation-toggler">
+                    <a href="#" data-action="navigation-toggler">
+                        <i data-feather="menu"></i>
+                    </a>
+                </div>
+                <div class="header-logo">
+                    <a href=index-2.html>
+                        <img class="logo" src="dashboard/assets/media/image/logo_.svg" alt="logo">
+                        <img class="logo-dashboard" src="dashboard/assets/media/image/logo_.svg" alt="dashboard logo">
+                    </a>
+                </div>
+            </div>
+
+            <div class="header-body">
+                <div class="header-body-left">
+                    <div class="page-title">
+                        <h4>Dashboard</h4>
+                    </div>
+                </div>
+                <div class="header-body-right">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+
+                        </li>
+
+                        <!-- begin::header search -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" title="Search" data-toggle="dropdown">
+                                <i data-feather="search"></i>
+                            </a>
+                            <div class="dropdown-menu p-2 dropdown-menu-right">
+                                <form>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <div class="input-group-prepend">
+                                            <button class="btn" type="button">
+                                                <i data-feather="search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <!-- end::header search -->
+                    </ul>
+
+                    <!-- begin::mobile header toggler -->
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item header-toggler">
+                            <a href="#" class="nav-link">
+                                <i data-feather="arrow-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end::mobile header toggler -->
+                </div>
+            </div>
+
+        </div>
+        <!-- end::header -->
+
+        <div class="content-wrapper">
+
+            <!-- begin::navigation -->
+            <div class="navigation">
+                <div class="navigation-menu-tab">
+                    <ul>
+                        <li>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Ecommerce"
+                                data-nav-target="#ecommerce">
+                                <i data-feather="users"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Analytics"
+                                data-nav-target="#analytics">
+                                <i data-feather="activity"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Projects"
+                                data-nav-target="#projects">
+                                <i data-feather="shopping-cart"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Apps"
+                                data-nav-target="#apps">
+                                <i data-feather="globe"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="User"
+                                data-nav-target="#user">
+                                <i data-feather="users"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Components"
+                                data-nav-target="#components">
+                                <i data-feather="layers"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Forms"
+                                data-nav-target="#forms">
+                                <i data-feather="edit-3"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Plugins"
+                                data-nav-target="#plugins">
+                                <i data-feather="gift"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Pages"
+                                data-nav-target="#pages">
+                                <i data-feather="copy"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="navigation-menu-body text-white">
+                    <div class="navigation-menu-group" style="color: #ffffff !important;">
+                        <div id="ecommerce">
+                            <ul>
+                                <li> <a class="active" href="ecommerce-dashboard.html">Dashboard</a></li>
+                                <div class="">
+                                    <div class="col-md-10 offset-md-1">
+                                        <div class="border-cover">
+                                            <div>
+                                                <img class="profile-image m-t-b-20"
+                                                    src="dashboard/assets/media/image/user_profile.jpg" alt="Profile" />
+                                            </div>
+                                        </div>
+                                        <h4 class="m-t-10 text-white">Gatunmi Aliyu</h4>
+                                        <p class="text-white ml-2" style="margin-top: -12px;">Gandour Hotels</p>
+
+                                        <div class="m-t-20">
+                                            <div class="ml-1">
+                                                <p class="text-white text-left">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing
+                                                    elit, sed do eiusmod tempo incididunt ut labore</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <div id="analytics">
+                            <ul>
+                                <li class="navigation-divider d-flex align-items-center">
+                                    <i class="mr-2" data-feather="activity"></i> Analytics
+                                </li>
+                                <li>
+                                    <a href="analytics-dashboard.html">Dashboard</a></li>
+                                <li>
+                                    <a href="customers.html">Customers</a></li>
+                                <li class="navigation-divider">Summary</li>
+                                <li>
+                                    <a href="#" class="d-flex align-items-start">
+                                        <div>
+                                            <figure class="avatar mr-2">
+                                                <span class="avatar-title bg-warning rounded-circle">
+                                                    <i class="ti-bar-chart-alt"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Total Sales</h6>
+                                            <p class="text-muted mb-0 small">This Mounth</p>
+                                            <h4 class="mb-0">$50.958</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex align-items-start">
+                                        <div>
+                                            <figure class="avatar mr-2">
+                                                <span class="avatar-title bg-success rounded-circle">
+                                                    <i class="ti-world"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Projects</h6>
+                                            <p class="text-muted mb-0 small">Today</p>
+                                            <h4 class="mb-0">35</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex align-items-start">
+                                        <div>
+                                            <figure class="avatar mr-2">
+                                                <span class="avatar-title bg-info rounded-circle">
+                                                    <i class="ti-user"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Total Visitor</h6>
+                                            <p class="text-muted mb-0 small">Today</p>
+                                            <h4 class="mb-0">5.301</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="projects">
+                            <ul>
+                                <li class="navigation-divider d-flex align-items-center">
+                                    <i class="mr-2" data-feather="briefcase"></i> Projects
+                                </li>
+                                <li>
+                                    <a href="projects-dashboard.html">Dashboard</a></li>
+                                <li>
+                                    <a href="project-list.html">Project List</a></li>
+                                <li>
+                                    <a href="project-grid.html">Project Grid</a></li>
+                                <li>
+                                    <a href="project-detail.html">Project Detail</a></li>
+                                <li>
+                                    <a href="clients.html">Clients</a></li>
+                                <li class="navigation-divider">Summary</li>
+                                <li>
+                                    <a href="#" class="d-flex align-items-start">
+                                        <div>
+                                            <figure class="avatar mr-2">
+                                                <span class="avatar-title bg-warning rounded-circle">
+                                                    <i class="ti-bar-chart-alt"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Total Sales</h6>
+                                            <p class="text-muted mb-0 small">This Mounth</p>
+                                            <h4 class="mb-0">$50.958</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex align-items-start">
+                                        <div>
+                                            <figure class="avatar mr-2">
+                                                <span class="avatar-title bg-success rounded-circle">
+                                                    <i class="ti-world"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Projects</h6>
+                                            <p class="text-muted mb-0 small">Today</p>
+                                            <h4 class="mb-0">35</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex align-items-start">
+                                        <div>
+                                            <figure class="avatar mr-2">
+                                                <span class="avatar-title bg-info rounded-circle">
+                                                    <i class="ti-user"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Total Visitor</h6>
+                                            <p class="text-muted mb-0 small">Today</p>
+                                            <h4 class="mb-0">5.301</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="apps">
+                            <ul>
+                                <li class="navigation-divider d-flex align-items-center">
+                                    <i class="mr-2" data-feather="globe"></i> Apps
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <span>Chat</span>
+                                        <span class="badge badge-danger">5</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mail.html">
+                                        <span>Mail</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="todo-list.html">
+                                        <span>Todo List</span>
+                                        <span class="badge badge-warning">2</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="file-manager.html">
+                                        <span>File Manager</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="calendar.html">
+                                        <span>Calendar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="gallery.html">
+                                        <span>Gallery</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div id="user">
+                            <ul>
+                                <li class="navigation-divider d-flex align-items-center">
+                                    <i class="mr-2" data-feather="users"></i> User
+                                </li>
+                                <li>
+                                    <a href="profile.html">Profile</a></li>
+                                <li>
+                                    <a href="user-list.html">User List</a></li>
+                                <li>
+                                    <a href="user-edit.html">User Edit</a></li>
+                                <li><a href="login.html" target="_blank">Login</a></li>
+                                <li><a href="register.html" target="_blank">Register</a></li>
+                                <li><a href="recovery-password.html" target="_blank">Recovery Password</a>
+                                </li>
+                                <li><a href="lock-screen.html" target="_blank">Lock Screen</a></li>
+                                <li class="navigation-divider">Followers</li>
+                                <li>
+                                    <div class="avatar-group ml-4">
+                                        <figure class="avatar avatar-sm">
+                                            <a href="#" title="Krisha McAlees" data-toggle="tooltip">
+                                                <img src="../../assets/media/image/user/women_avatar4.jpg"
+                                                    class="rounded-circle" alt="avatar">
+                                            </a>
+                                        </figure>
+                                        <figure class="avatar avatar-sm">
+                                            <a href="#" title="Rozella Baskerfield" data-toggle="tooltip">
+                                                <span class="avatar-title bg-info rounded-circle">R</span>
+                                            </a>
+                                        </figure>
+                                        <figure class="avatar avatar-sm">
+                                            <a href="#" title="Hilton Dew" data-toggle="tooltip">
+                                                <img src="../../assets/media/image/user/man_avatar3.jpg"
+                                                    class="rounded-circle" alt="avatar">
+                                            </a>
+                                        </figure>
+                                        <figure class="avatar avatar-sm">
+                                            <a href="#" title="Mellie Smittoune" data-toggle="tooltip">
+                                                <img src="../../assets/media/image/user/man_avatar1.jpg"
+                                                    class="rounded-circle" alt="avatar">
+                                            </a>
+                                        </figure>
+                                        <figure class="avatar avatar-sm">
+                                            <a href="#" title="Avery Hampshire" data-toggle="tooltip">
+                                                <span class="avatar-title bg-warning rounded-circle">A</span>
+                                            </a>
+                                        </figure>
+                                        <figure class="avatar avatar-sm">
+                                            <a href="#" title="Krisha McAlees" data-toggle="tooltip">
+                                                <img src="../../assets/media/image/user/women_avatar2.jpg"
+                                                    class="rounded-circle" alt="avatar">
+                                            </a>
+                                        </figure>
+                                        <figure class="avatar avatar-sm">
+                                            <a href="#" title="Rozella Baskerfield" data-toggle="tooltip">
+                                                <span class="avatar-title bg-success rounded-circle">R</span>
+                                            </a>
+                                        </figure>
+                                        <figure class="avatar avatar-sm">
+                                            <a href="#" title="Other" data-toggle="tooltip">
+                                                <span class="avatar-title bg-dark rounded-circle">+5</span>
+                                            </a>
+                                        </figure>
+                                    </div>
+                                </li>
+                                <li class="navigation-divider">Following</li>
+                                <li>
+                                    <div class="avatar-group ml-4">
+                                        <figure class="avatar avatar-sm">
+                                            <a href="#" title="Krisha McAlees" data-toggle="tooltip">
+                                                <img src="../../assets/media/image/user/women_avatar5.jpg"
+                                                    class="rounded-circle" alt="avatar">
+                                            </a>
+                                        </figure>
+                                        <figure class="avatar avatar-sm">
+                                            <a href="#" title="Darby Croci" data-toggle="tooltip">
+                                                <span class="avatar-title bg-danger rounded-circle">D</span>
+                                            </a>
+                                        </figure>
+                                        <figure class="avatar avatar-sm">
+                                            <a href="#" title="Hilton Dew" data-toggle="tooltip">
+                                                <img src="../../assets/media/image/user/man_avatar5.jpg"
+                                                    class="rounded-circle" alt="avatar">
+                                            </a>
+                                        </figure>
+                                        <figure class="avatar avatar-sm">
+                                            <a href="#" title="Mellie Smittoune" data-toggle="tooltip">
+                                                <img src="../../assets/media/image/user/man_avatar2.jpg"
+                                                    class="rounded-circle" alt="avatar">
+                                            </a>
+                                        </figure>
+                                        <figure class="avatar avatar-sm">
+                                            <a href="#" title="Mahalia Lemme" data-toggle="tooltip">
+                                                <span class="avatar-title bg-secondary rounded-circle">M</span>
+                                            </a>
+                                        </figure>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="components">
+                            <ul>
+                                <li class="navigation-divider d-flex align-items-center">
+                                    <i class="mr-2" data-feather="layers"></i> Components
+                                </li>
+                                <li>
+                                    <a href="#">Basic Components</a>
+                                    <ul>
+                                        <li>
+                                            <a href="alert.html">Alerts</a></li>
+                                        <li>
+                                            <a href="accordion.html">Accordion</a></li>
+                                        <li>
+                                            <a href="buttons.html">Buttons</a></li>
+                                        <li>
+                                            <a href="dropdown.html">Dropdown</a></li>
+                                        <li>
+                                            <a href="list-group.html">List Group</a></li>
+                                        <li>
+                                            <a href="pagination.html">Pagination</a></li>
+                                        <li>
+                                            <a href="typography.html">Typography</a></li>
+                                        <li>
+                                            <a href="media-object.html">Media Object</a>
+                                        </li>
+                                        <li>
+                                            <a href="progress.html">Progress</a></li>
+                                        <li>
+                                            <a href="modal.html">Modal</a></li>
+                                        <li>
+                                            <a href="spinners.html">Spinners</a></li>
+                                        <li>
+                                            <a href="navs.html">Navs</a></li>
+                                        <li>
+                                            <a href="tab.html">Tab</a></li>
+                                        <li>
+                                            <a href="tooltip.html">Tooltip</a></li>
+                                        <li>
+                                            <a href="popovers.html">Popovers</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Cards</a>
+                                    <ul>
+                                        <li>
+                                            <a href="basic-cards.html">Basic Cards </a></li>
+                                        <li>
+                                            <a href="image-cards.html">Image Cards </a></li>
+                                        <li>
+                                            <a href="scroll-cards.html">Scroll Cards </a></li>
+                                        <li>
+                                            <a href="other-cards.html">Others Cards</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Tables</a>
+                                    <ul>
+                                        <li>
+                                            <a href="basic-tables.html">Basic Tables</a></li>
+                                        <li>
+                                            <a href="dataTable.html">Datatable</a></li>
+                                        <li>
+                                            <a href="responsive-tables.html">Responsive Tables</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Charts</a>
+                                    <ul>
+                                        <li>
+                                            <a href="apexchart.html">Apex Chart</a></li>
+                                        <li>
+                                            <a href="chartjs.html">Chartjs</a></li>
+                                        <li>
+                                            <a href="justgage.html">Justgage</a></li>
+                                        <li>
+                                            <a href="morsis.html">Morsis</a></li>
+                                        <li>
+                                            <a href="peity.html">Peity</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Maps</a>
+                                    <ul>
+                                        <li>
+                                            <a href="google-map.html">Google Map</a></li>
+                                        <li>
+                                            <a href="vector-map.html">Vector Map</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="avatar.html">Avatar</a></li>
+                                <li>
+                                    <a href="icons.html">Icons</a></li>
+                                <li>
+                                    <a href="colors.html">Colors</a></li>
+                            </ul>
+                        </div>
+                        <div id="forms">
+                            <ul>
+                                <li class="navigation-divider d-flex align-items-center">
+                                    <i class="mr-2" data-feather="edit-3"></i> Forms
+                                </li>
+                                <li>
+                                    <a href="basic-forms.html">Basic Forms</a></li>
+                                <li>
+                                    <a href="custom-forms.html">Custom Forms</a></li>
+                                <li>
+                                    <a href="advanced-forms.html">Advanced Forms</a></li>
+                                <li>
+                                    <a href="form-validation.html">Form Validation</a></li>
+                                <li>
+                                    <a href="form-wizard.html">Form Wizard</a></li>
+                                <li>
+                                    <a href="file-upload.html">File Upload</a></li>
+                                <li>
+                                    <a href="datepicker.html">Datepicker</a></li>
+                                <li>
+                                    <a href="timepicker.html">Timepicker</a></li>
+                                <li>
+                                    <a href="colorpicker.html">Colorpicker</a></li>
+                            </ul>
+                        </div>
+                        <div id="plugins">
+                            <ul>
+                                <li class="navigation-divider d-flex align-items-center">
+                                    <i class="mr-2" data-feather="gift"></i> Plugins
+                                </li>
+                                <li>
+                                    <a href="sweet-alert.html">Sweet Alert</a></li>
+                                <li>
+                                    <a href="lightbox.html">Lightbox</a></li>
+                                <li>
+                                    <a href="toast.html">Toast</a></li>
+                                <li>
+                                    <a href="tour.html">Tour</a></li>
+                                <li>
+                                    <a href="slick-slide.html">Slick Slide</a></li>
+                                <li>
+                                    <a href="nestable.html">Nestable</a></li>
+                            </ul>
+                        </div>
+                        <div id="pages">
+                            <ul>
+                                <li class="navigation-divider d-flex align-items-center">
+                                    <i class="mr-2" data-feather="copy"></i> Pages
+                                </li>
+                                <li>
+                                    <a href="timeline.html">Timeline</a></li>
+                                <li>
+                                    <a href="pricing-table.html">Pricing Table</a></li>
+
+                                <li>
+                                    <a href="pricing-table-2.html">Pricing Table 2</a></li>
+                                <li>
+                                    <a href="search-result.html">Search Result</a></li>
+                                <li>
+                                    <a href="mailing.html">Mailing</a></li>
+                                <li>
+                                    <a href="#">Error Pages</a>
+                                    <ul>
+                                        <li><a href="404.html" target="_blank">404</a></li>
+                                        <li><a href="503.html" target="_blank">503</a></li>
+                                        <li><a href="mean-at-work.html" target="_blank">Mean at
+                                                Work</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="blank-page.html">Blank Page</a>
+                                </li>
+                                <li>
+                                    <a href="#">Menu Level</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Menu Level</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Menu Level </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end::navigation -->
+
+            <div class="content-body">
+
+                <div class="content">
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="card">
+                                        <div class="card-body" style="padding: .6rem;">
+                                            <div class="d-flex justify-content-center m-t-10">
+                                                <div>
+                                                    <p class="text-muted font-size-25">Welcome back Gatunmi!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12 m-t-10">
+                                            <div class="order-right">
+                                                <p class="text-muted">Today</p>
+                                                <p class="text-muted m-t-20 font-size-22 neg-magin-2">&#x20A6; 59,400
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm12 m-t-10">
+                                            <div class="order-right">
+                                                <p class="text-muted">This Week</p>
+                                                <p class="text-muted m-t-20 font-size-22 neg-magin-2">&#x20A6; 136,800
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm12 m-t-10">
+                                            <div class="">
+                                                <p class="text-muted">This Month</p>
+                                                <p class="text-muted m-t-20 font-size-22 neg-magin-2">
+                                                    &#x20A6; 897,750 <span class="btn btn-success font-size-13 btn-m"><i
+                                                            class="fa fa-arrow-up"></i>15%</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-12">
+                                    <div class="card" style="background: #283EB1; height: 140px;">
+                                        <div>
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between mb-3">
+                                                    <div>
+                                                        <h2 class="text-white col-md-7 font-weight-bold">Get 15%
+                                                            discount</h2>
+                                                        <p class="text-white col-md-8"
+                                                            style="line-height: 17px; font-size: 13px;">on specific
+                                                            items with this code : #22334098</p>
+                                                    </div>
+                                                    <div>
+                                                        <img style="margin-top: -30px; width: 150px;"
+                                                            src="dashboard/assets/media/image/dashboard_icon.png"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card">
+                                <div class="card-bodys p-t-b-20">
+                                    <div class="">
+                                        <p class="text-muted">Invoice Raised</p>
+                                        <h6 class="card-title neg-magin-2 font-size-25">&#x20A6;12,000,000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card neg-magin">
+                                <div class="card-bodys">
+                                    <div class="">
+                                        <p class="text-muted">Invoice Paid</p>
+                                        <h6 class="card-title neg-magin-2 font-size-25">&#x20A6;2,600,000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card neg-magin">
+                                <div class="card-bodys">
+                                    <div class="">
+                                        <p class="text-muted">Invoice Approved</p>
+                                        <h6 class="card-title neg-magin-2 font-size-25">&#x20A6;2,600,000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12">
+                            <div class="card">
+                                <div class="card-body" style="padding-bottom: 0px;">
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="p-t-b-50">
+                                                <p class="m-t-20 font-size-13">You have <span class="text-success">15%
+                                                        growth</span> in comparison with previous month. </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div id="chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table table-lg">
+                                    <thead>
+                                        <tr>
+                                            <th>Order ID</th>
+                                            <th>Credit Date</th>
+                                            <th>Status</th>
+                                            <th>Company</th>
+                                            <th>Vendor </th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                #PO158335749901
+                                            </td>
+                                            <td>
+                                                FEB. 10, 2020. 2:49 PM
+                                            </td>
+                                            <td><span class="btn btn-success btn-sm">Approved</span></td>
+                                            <td>ENDEN LIFE</td>
+                                            <td>
+                                                <span></span>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-white btn btn-danger btn-xs"
+                                                    data-toggle="tooltip" title="Edit">
+                                                    <i class="fa fa-times"></i>
+                                                </a>
+                                                <a href="#" class="text-white  btn btn-success btn-xs"
+                                                    data-toggle="tooltip" title="Delete">
+                                                    <i class="fa fa-check"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                #PO158335749902
+                                            </td>
+                                            <td>
+                                                FEB. 10, 2020. 2:49 PM
+                                            </td>
+                                            <td><span class="btn btn-success btn-sm">Approved</span></td>
+                                            <td>ENDEN LIFE</td>
+                                            <td>
+                                                <span></span>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-white btn btn-danger btn-xs"
+                                                    data-toggle="tooltip" title="Edit">
+                                                    <i class="fa fa-times"></i>
+                                                </a>
+                                                <a href="#" class="text-white  btn btn-success btn-xs"
+                                                    data-toggle="tooltip" title="Delete">
+                                                    <i class="fa fa-check"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                #PO158335749903
+                                            </td>
+                                            <td>
+                                                FEB. 10, 2020. 2:49 PM
+                                            </td>
+                                            <td><span class="btn btn-success btn-sm">Approved</span></td>
+                                            <td>ENDEN LIFE</td>
+                                            <td>
+                                                <span></span>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-white btn btn-danger btn-xs"
+                                                    data-toggle="tooltip" title="Edit">
+                                                    <i class="fa fa-times"></i>
+                                                </a>
+                                                <a href="#" class="text-white  btn btn-success btn-xs"
+                                                    data-toggle="tooltip" title="Delete">
+                                                    <i class="fa fa-check"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                #PO158335749904
+                                            </td>
+                                            <td>
+                                                FEB. 10, 2020. 2:49 PM
+                                            </td>
+                                            <td><span class="btn btn-success btn-sm">Approved</span></td>
+                                            <td>ENDEN LIFE</td>
+                                            <td>
+                                                <span></span>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-white btn btn-danger btn-xs"
+                                                    data-toggle="tooltip" title="Edit">
+                                                    <i class="fa fa-times"></i>
+                                                </a>
+                                                <a href="#" class="text-white  btn btn-success btn-xs"
+                                                    data-toggle="tooltip" title="Delete">
+                                                    <i class="fa fa-check"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- end::main -->
+
+        <!-- Plugin scripts -->
+        <script src="dashboard/vendors/bundle.js"></script>
+
+
+        <!-- Apex chart -->
+        <script src="dashboard/apexcharts.com/samples/assets/irregular-data-series.js"></script>
+        <script src="dashboard/vendors/charts/apex/apexcharts.min.js"></script>
+
+        <!-- Daterangepicker -->
+        <script src="dashboard/vendors/datepicker/daterangepicker.js"></script>
+
+        <!-- DataTable -->
+        <script src="dashboard/vendors/dataTable/datatables.min.js"></script>
+
+        <!-- Dashboard scripts -->
+        <script src="dashboard/assets/js/examples/dashboard.js"></script>
+
+        <script src="dashboard/assets/js/examples/pages/ecommerce-dashboard.js"></script>
+
+
+        <!-- App scripts -->
+        <script src="dashboard/assets/js/app.min.js"></script>
+        <script>
+            var options = {
+                series: [{
+                    name: "Desktops",
+                    data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+                }],
+                chart: {
+                    height: 250,
+                    type: 'line',
+                    zoom: {
+                        enabled: false
+                    }
+                },
+                dataLabels: {
+                    enabled: false
+                },
+                stroke: {
+                    curve: 'straight'
+                },
+                title: {
+                    text: '',
+                    align: 'left'
+                },
+                grid: {
+                    row: {
+                        colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+                        opacity: 0.5
+                    },
+                },
+                xaxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+                }
+            };
+
+            var chart = new ApexCharts(document.querySelector("#chart"), options);
+            chart.render();
+        </script>
+
+</body>
+
+</html>

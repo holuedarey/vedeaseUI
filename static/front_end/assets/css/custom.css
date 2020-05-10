@@ -1,3 +1,23 @@
+.brand-partner{
+	width: 82%;
+    margin-top: 30px;
+}
+
+.quality-product{
+	width: 70px;
+}
+.bottom{
+	position: relative;
+	bottom: -44px !important;
+}
+.bottom_{
+	position: relative;
+	bottom: -44px !important;
+}
+select, .form-control{
+	border-radius: 12px !important;
+    border: 1px solid blue !important;
+}
 .section-shaped .shape-style-vendease.shape-default {
     background: linear-gradient(150deg, #1a3df6 15%, #182075 70%, #555abf 94%);
 }
@@ -10,9 +30,9 @@
 .section-gray {
 	background-color: #f4f4f4;
 }
-.footer-list li {
-	margin-bottom: 1rem;
-}
+/* .footer-list li {
+	/* margin-bottom: 1rem; */
+/* } */
 .slick-list {
 	margin: 0 -5px;
 }
@@ -148,3 +168,15 @@
 }
 
 
+
+.font-16{
+	font-size: 16px !important;
+}
+
+.box-format{
+	position: relative !important; 
+	left: 200px !important; 
+	z-index: 999 !important;
+	background: #efefef !important; 
+	border-radius:15px !important;
+}

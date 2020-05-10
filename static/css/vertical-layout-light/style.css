@@ -27616,7 +27616,7 @@ div.tagsinput span.tag a {
   display: block;
   width: auto;
   margin: 0 0.5em 0.5em;
-  padding: 1em 1em;
+  /* padding: 1em 1em; */
   text-decoration: none;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -27629,7 +27629,7 @@ div.tagsinput span.tag a {
   display: block;
   width: auto;
   margin: 0 0.5em 0.5em;
-  padding: 1em;
+  /* padding: 1em; */
   text-decoration: none;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -27640,7 +27640,7 @@ div.tagsinput span.tag a {
   display: block;
   width: auto;
   margin: 0 0.5em 0.5em;
-  padding: 1em;
+  /* padding: 1em; */
   text-decoration: none;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -27961,7 +27961,7 @@ div.tagsinput span.tag a {
 }
 
 .auth form .auth-form-btn {
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
   line-height: 1.5;
 }
 
